@@ -21,9 +21,9 @@ RUN apt-get install -y \
 RUN mkdir -p /usr/src/app
 
 # Download and extract the app
-RUN curl -sL https://github.com/Dids/albion-discordbot/archive/89547b7a16d68d16ce35a3239a616b6e9d79d292.zip | bsdtar -xvf- -C /tmp && \
-	mv /tmp/albion-discordbot-89547b7a16d68d16ce35a3239a616b6e9d79d292/* /usr/src/app/ && \
-	rm -fr /tmp/albion-discordbot-89547b7a16d68d16ce35a3239a616b6e9d79d292
+RUN curl -sL https://github.com/Dids/albion-discordbot/archive/bdefea03029db1654a1f98d43854aa933eee272f.zip | bsdtar -xvf- -C /tmp && \
+	mv /tmp/albion-discordbot-bdefea03029db1654a1f98d43854aa933eee272f/* /usr/src/app/ && \
+	rm -fr /tmp/albion-discordbot-bdefea03029db1654a1f98d43854aa933eee272f
 
 # Install app dependencies
 WORKDIR /usr/src/app
