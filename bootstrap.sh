@@ -21,8 +21,5 @@ jq ".twitter.consumer_secret = "$TWITTER_CONSUMER_SECRET"" config.json > tmp.$$.
 jq ".twitter.access_token = "$TWITTER_ACCESS_TOKEN"" config.json > tmp.$$.json && mv tmp.$$.json config.json
 jq ".twitter.access_token_secret = "$TWITTER_ACCESS_TOKEN_SECRET"" config.json > tmp.$$.json && mv tmp.$$.json config.json
 
-## DEBUG: Print the file
-cat /usr/src/app/config.json
-
 # Start the app
 /usr/bin/env npm run production
