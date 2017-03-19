@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --no-cache -t didstopia/docker-discord-ao:latest .
+docker build --no-cache -t didstopia/discord-ao:latest .
