@@ -1,0 +1,8 @@
+config.json
+.env
+data/
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+docker_*.sh
